@@ -273,7 +273,7 @@
 
                 peerConnection.onicecandidate = (event) => {
                     if (event.candidate) {
-                        console.log("Sending Ice Candidates");
+                       // console.log("Sending Ice Candidates");
 
                         socket.emit("signalingMessage", {
                             room,
@@ -335,7 +335,7 @@
                 })
 
             socket.on("incomingCall", function () {
-                console.log("hey");
+                //console.log("hey");
                 document.querySelector("#incoming-call").classList.remove("hidden");
             })
 
